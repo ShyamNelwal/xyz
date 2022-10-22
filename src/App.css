@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-clr: #f21d2f;
+  --secondary-clr: #f2e313;
+  --black-clr: #0d1826;
+  --black-clr: #111;
+  --white-clr: #ffffff;
+  --yellow-first-shade: #f2c438;
+  --yellow-second-shade: #f2b33d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+figcaption ::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+figcaption ::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f1f1f1;
+}
+
+/* Handle */
+figcaption ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #888;
+}
+
+/* Handle on hover */
+figcaption ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  top: 0 !important;
+  position: static !important;
+  overflow-x: hidden;
+}
+
+.none {
+  display: none !important;
+}
+
+.red-bg {
+  background-color: var(--primary-clr);
+}
+
+.black-bg {
+  background-color: var(--black-clr);
+}
+
+.gradient {
+  background-image: linear-gradient(to bottom,
+      #f21d2f,
+      #f85921,
+      #f98118,
+      #f7a41f,
+      #f2c438);
+}
+
+.txt-shadow {
+  text-shadow: 3px 0px 7px rgba(0, 0, 0, 0.8), -3px 0px 7px rgba(0, 0, 0, 0.8),
+    0px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+.primary-text-clr {
+  color: var(--primary-clr);
+}
+
+.secondary-text-clr {
+  color: var(--yellow-first-shade);
+}
+
+.white-txt {
+  color: var(--white-clr);
+}
+
+.black-txt {
+  columns: var(--black-clr);
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.pageContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  min-height: calc(100vh - 110px);
+  display: grid;
+  grid-template-rows: max-content auto;
+}
+
+.page h2{
+  min-height:1rem;
+}

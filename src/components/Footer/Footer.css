@@ -1,0 +1,132 @@
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.first h4::before {
+    display: none;
+}
+
+.footer {
+    background-color: #181818;
+    padding: 70px 0;
+    padding-bottom: 0;
+    line-height: 2;
+}
+
+.footer-col {
+    width: 25% !important;
+    padding: 0 15px;
+}
+
+.footer-col ul {
+    padding-left: 0;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--primary-clr);
+    height: 2px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a,
+.footer-col p {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ababab !important;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff !important;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+#lstFooter {
+    background: #363636;
+    padding: 0 3rem;
+    justify-content: space-between;
+    line-height: 3;
+    align-items: center;
+}
+
+/*responsive*/
+@media (max-width: 1020px) {
+    .footer-col {
+        width: 50% !important;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #lstFooter,
+    #insta-announcement {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #instaFeed {
+        margin: 0 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+
+}

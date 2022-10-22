@@ -1,0 +1,157 @@
+.carousel-item {
+    overflow: hidden;
+    max-height: calc(100vh - 110px);
+    text-align: center;
+}
+
+.carousel-img {
+    position: relative;
+    top: -250px;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-indicators {
+    bottom: 100px !important;
+}
+
+#about {
+    position: relative;
+}
+
+#about:after {
+    content: "";
+    background-color: #f7f7f4;
+    width: 700px;
+    height: 700px;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.about-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#hero {
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem 0;
+}
+
+.hero {
+    max-height: 100px;
+    padding: 0 1rem;
+    font-weight: 600;
+}
+
+.left-hero {
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: right;
+    color: var(--yellow-second-shade);
+}
+
+.right-hero {
+    text-align: left;
+    color: var(--primary-clr);
+}
+
+.skiptranslate {
+    display: none;
+}
+
+.section-flex {
+    display: flex;
+}
+
+.events-card {
+    margin: 1rem;
+}
+
+/*responsive*/
+@media (max-width: 1020px) {
+    #hero {
+      position: initial;
+      grid-template-columns: 1fr;
+      background: rgba(0, 0, 0, 0.85);
+    }
+    .about-card {
+      grid-template-columns: 1fr;
+    }
+    #kv {
+      font-size: 2.5rem;
+    }
+    #kv-sub {
+      color: var(--yellow-second-shade);
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .hero {
+      text-align: center;
+    }
+    .left-hero {
+      display: none;
+    }
+    .right-hero {
+      font-size: 1.5rem;
+    }
+    .section-flex {
+      flex-direction: column;
+    }
+    .carousel-indicators {
+      bottom: 0 !important;
+    }
+  }
+  
+  @media (max-width: 1300px) {
+    .carousel-img {
+      top: 0;
+    }
+  }
+  
+  #instaFeed {
+    display: flex;
+    flex-wrap: wrap;
+    width: max-content;
+    justify-content: space-around;
+    grid-row-gap: 0.1rem;
+    margin: 0.1rem 0;
+    width: 380px;
+    height: 50vh;
+    max-height: 500px;
+    overflow: auto;
+    border-radius: 2px;
+    border:1px solid #e3e3e4;
+  }
+  
+  #instaFeedSection {
+    width: max-content;
+    margin: 0.1rem;
+  }
+  
+  #instaFeedSection .item {
+    padding: 0.5rem 1rem;
+  }
+  
+  #insta-announcement {
+    display: flex;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  
+  #announcement {
+    max-width: 100%;
+    width: 50vw;
+    min-width: 400px;
+  }
